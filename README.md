@@ -1,28 +1,83 @@
 # Comandos Git Bash
 
-###### No Git Bash
+##### **No Git Bash**
 
-CLONAR REPOSITÓRIO
+###### LISTAR OS DIRETÓRIOS E ARQUIVOS
 
-    **git clone** https://github.com/ayrahidasi/dio_desafio_github.git
+ **ls	**
 
-    **cd** dio_desafio_github/
+ **ls -a** [mostra arquivos ocultos]
 
-    **git status**
+###### MUDAR DEDIRETÓRIO
 
-PUSH DAS ALTERAÇÕES
+**cd** dio_desafio_github/
 
-    **git add .**
+**cd ..** [muda para o diretório pai]
 
-    **git commit -m** "Inclusão das anotações do curso de GIT/GITHUB"
+###### INICIALIZAR UM NOVO REPOSITÓRIO GIT
 
-    **git push origin main**
+**git init** [cria um repositório]
+
+###### ADICIONAR UM REPOSITÓRIO REMOTO A UM REPOSITÓRIO LOCAL
+
+Primeiramente, crie o repositório no GitHub e copie o link do repositorio
+
+**git remote add origin** link_do_repositório_github
+
+###### CLONAR REPOSITÓRIO
+
+**git clone** https://github.com/ayrahidasi/dio_desafio_github.git
+
+**cd** dio_desafio_github/
+
+###### MOSTRA O STATUS DOS ARQUIVOS NO REPOSITÓRIO
+
+**git status**
+
+###### PUSH DAS ALTERAÇÕES
+
+ **git add .** [todos os arquivos e diretórios]
+
+ **git add *:** [adiciona todos os arquivos]
+
+ **git add** nome_do_arquivo.md pasta/ [adiciona um arquivo específico à área de stage na pasta]
+
+ **git commit -m** "Inclusão das anotações do curso de GIT/GITHUB" [comita as mudanças com uma mensagem descritiva]
+
+ **git push origin main**
+
+###### CRIAR ARQUIVO
+
+ **mkdir** livro_receitas
+
+###### LIMPAR UM ARQUIVO OU CRIAR UM ARQUIVO VAZIO
+
+ **echo >** nome_do_arquivo.md
+
+###### ADICIONAR UM REPOSITÓRIO REMOTO A UM REPOSITÓRIO LOCAL
+
+Primeiramente, crie o repositório no GitHub e copie o link do repositorio
+
+**git remote add origin** link_do_repositório_github
+
+###### EXIBIR OS URLs DOS REPOSITÓRIOS REMOTOS
+
+**git remote -v**
+
+###### ATUALIZA O BRANCH MASTER NO REPOSITÓRIO REMOTO
+
+**git checkout master** [certifique-se você esteja no branch master local]
+
+**git push origin master**
+
+
 
 
 1. **Configuração Inicial** :
 
 * `git config --global user.name "Seu Nome"`: Define seu nome de usuário.
 * `git config --global user.email "seuemail@exemplo.com"`: Define seu e-mail.
+* **git config --list**
 
 1. **Criar e Clonar Repositórios** :
 
