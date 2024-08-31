@@ -1,50 +1,83 @@
 # Comandos Git Bash
 
-###### No Git Bash
+##### **No Git Bash**
 
-LISTAR OS DIRETÓRIOS E ARQUIVOS
+###### LISTAR OS DIRETÓRIOS E ARQUIVOS
 
-    **ls	**
+ **ls	**
 
-    **ls -a** [mostra arquivos ocultos]
+ **ls -a** [mostra arquivos ocultos]
 
-CRIAR ARKIVO
+###### MUDAR DEDIRETÓRIO
 
-    **mkdir** livro_receitas
+**cd** dio_desafio_github/
 
-MUDAR DEDIRETÓRIO
+**cd ..** [muda para o diretório pai]
 
-    **cd** dio_desafio_github/
+###### INICIALIZAR UM NOVO REPOSITÓRIO GIT
 
-    **cd ..** [muda para o diretório pai]
+**git init** [cria um repositório]
 
-INICIALIZAR UM NOVO REPOSITÓRIO GIT
+###### ADICIONAR UM REPOSITÓRIO REMOTO A UM REPOSITÓRIO LOCAL
 
-    **git init**
+Primeiramente, crie o repositório no GitHub e copie o link do repositorio
 
-CLONAR REPOSITÓRIO
+**git remote add origin** link_do_repositório_github
 
-    **git clone** https://github.com/ayrahidasi/dio_desafio_github.git
+###### CLONAR REPOSITÓRIO
 
-    **cd** dio_desafio_github/
+**git clone** https://github.com/ayrahidasi/dio_desafio_github.git
 
-    **git status**
+**cd** dio_desafio_github/
 
-PUSH DAS ALTERAÇÕES
+###### MOSTRA O STATUS DOS ARQUIVOS NO REPOSITÓRIO
 
-    **git add .** [todos os arquivos e diretórios no diretório atual]
+**git status**
 
-    **git add *** [adiciona todos os arquivos no diretório]
+###### PUSH DAS ALTERAÇÕES
 
-    **git commit -m** "Inclusão das anotações do curso de GIT/GITHUB" [comita as mudanças com uma mensagem descritiva]
+ **git add .** [todos os arquivos e diretórios]
 
-    **git push origin main**
+ **git add *:** [adiciona todos os arquivos]
+
+ **git add** nome_do_arquivo.md pasta/ [adiciona um arquivo específico à área de stage na pasta]
+
+ **git commit -m** "Inclusão das anotações do curso de GIT/GITHUB" [comita as mudanças com uma mensagem descritiva]
+
+ **git push origin main**
+
+###### CRIAR ARQUIVO
+
+ **mkdir** livro_receitas
+
+###### LIMPAR UM ARQUIVO OU CRIAR UM ARQUIVO VAZIO
+
+ **echo >** nome_do_arquivo.md
+
+###### ADICIONAR UM REPOSITÓRIO REMOTO A UM REPOSITÓRIO LOCAL
+
+Primeiramente, crie o repositório no GitHub e copie o link do repositorio
+
+**git remote add origin** link_do_repositório_github
+
+###### EXIBIR OS URLs DOS REPOSITÓRIOS REMOTOS
+
+**git remote -v**
+
+###### ATUALIZA O BRANCH MASTER NO REPOSITÓRIO REMOTO
+
+**git checkout master** [certifique-se você esteja no branch master local]
+
+**git push origin master**
+
+
 
 
 1. **Configuração Inicial** :
 
 * `git config --global user.name "Seu Nome"`: Define seu nome de usuário.
 * `git config --global user.email "seuemail@exemplo.com"`: Define seu e-mail.
+* **git config --list**
 
 1. **Criar e Clonar Repositórios** :
 
