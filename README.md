@@ -71,7 +71,13 @@ Primeiramente, crie o repositório no GitHub e copie o link do repositorio
 **git push origin master**
 
 
+##### Chave SSH
 
+
+##### Token
+
+
+##### COMANDOS BÁSICOS
 
 1. **Configuração Inicial** :
 
